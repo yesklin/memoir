@@ -1,0 +1,25 @@
+{
+  "name": "memoir",
+  "version": "1.0.0",
+  "description": "Web application for spaced repetition learning",
+  "main": "start.js",
+  "scripts": {
+    "start": "nodemon src/start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yesklin/memoir.git"
+  },
+  "author": "yesklin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yesklin/memoir/issues"
+  },
+  "homepage": "https://github.com/yesklin/memoir#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
