@@ -1,0 +1,22 @@
+
+version: '3'
+services:
+    api:
+      container_name: backend_memoir
+      command: npm start
+      environment:
+          - DATABASE_URL=mongodb://mongodb/memoir
+      build:
+          context: .
+          dockerfile: Dockerfile
+      ports:
+          - "3000:3000"
+      depends_on:
+          - mongo
+      volumes:
+          - .:/app
+          - /app/node_modules
+    mongo:
+      container_name: mongodb
+      image: mongo
+      command: mongod --quiet --logpath /dev/null
