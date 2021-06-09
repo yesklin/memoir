@@ -4,8 +4,8 @@
   "description": "Web application for spaced repetition learning",
   "main": "start.js",
   "scripts": {
-    "start": "nodemon src/start.js",
-    "production": "node src/start.js -production",
+    "start": "node src/start.js -production",
+    "dev": "nodemon src/start.js",
     "test": "jest"
   },
   "repository": {
